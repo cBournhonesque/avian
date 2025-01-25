@@ -258,6 +258,7 @@ pub fn init_transforms<C: Component>(
         } else {
             default()
         };
+        dbg!(&new_position, &transform);
 
         // Compute Transform based on Rotation or vice versa
         let new_rotation = if let Some(rot) = rot {
